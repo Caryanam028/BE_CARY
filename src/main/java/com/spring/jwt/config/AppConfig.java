@@ -151,7 +151,8 @@ public class AppConfig {
             @Override
             public CorsConfiguration getCorsConfiguration(HttpServletRequest request) {
                 CorsConfiguration config = new CorsConfiguration();
-                config.setAllowedOrigins(Arrays.asList("https://caryanamindia.com", "http://localhost:5173","https://chic-vacherin-a1d7a6.netlify.app/", "http://localhost:63342","https://cffffftasting-production.up.railway.app","https://localhost","https://localhost:3000"));
+
+                config.setAllowedOrigins(Arrays.asList("https://caryanamindia.com", "http://localhost:5173", "http://localhost:63342","https://cffffftasting-production.up.railway.app","https://localhost","https://localhost:3000"));
                 config.setAllowedMethods(Collections.singletonList("*"));
                 config.setAllowCredentials(true);
                 config.setAllowedHeaders(Collections.singletonList("*"));
